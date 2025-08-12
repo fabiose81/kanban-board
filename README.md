@@ -20,7 +20,7 @@ https://github.com/user-attachments/assets/d61e908a-590c-49b4-a663-38235462fee5
         aws_access_key_id = {your key id}
         aws_secret_access_key = {your access key}
 
-### For Angular
+### For Angular and AWS/Cognito
     In angular folder create a file .env and insert:
 
     API_URL = "http://localhost:9000"
