@@ -20,6 +20,15 @@ https://github.com/user-attachments/assets/d61e908a-590c-49b4-a663-38235462fee5
         aws_access_key_id = {your key id}
         aws_secret_access_key = {your access key}
 
+### For Angular
+    In angular folder create a file .env and insert:
+
+    API_URL = "http://localhost:9000"
+    APP_AWS_COGNITO_REDIRECT_URL = "http://localhost:4200/"
+    APP_AWS_COGNITO_AUTHORITY = {your cognito authority}
+    APP_AWS_COGNITO_CLIENT_ID = {your cognito client id}
+    APP_AWS_COGNITO_SCOPE = {your cognito scopte}
+
 ### Lambda code for AWS Serveless(Python) :: Save Board
 
     import json
