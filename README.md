@@ -2,6 +2,23 @@ https://github.com/user-attachments/assets/d61e908a-590c-49b4-a663-38235462fee5
 
 ![alt text](https://github.com/fabiose81/kanban-board/blob/master/kanban-board.jpg?raw=true)
 
+### For Golang and AWS/Cognito/Lambda
+    In golang folder create a file .env and insert:
+
+    TRUSTED_PROXIES="127.0.0.1"
+    ALLOW_ORIGINS = "http://localhost:4200"
+    PORT = ":9000"
+    
+    AWS_COGNITO_ISSUER_URL = "https://cognito-idp.%s.amazonaws.com/%s"
+    AWS_REGION = {your region}   
+    AWS_COGNITO_USERPOOL_ID = {your user pool id}
+    AWS_COGNITO_CLIENT_ID = {your cognito client id}
+    AWS_LAMBDA_FUNCTION_SAVE = {your lambda function for save}
+    AWS_LAMBDA_FUNCTION_GET = {your lambda function for get}
+    AWS_PROFILE = "golang" //Profile created in .aws/credentias to set aws_access_key_id and aws_secret_access_key 
+    Ex: [golang]
+        aws_access_key_id = {your key id}
+        aws_secret_access_key = {your access key}
 
 ### Lambda code for AWS Serveless(Python) :: Save Board
 
